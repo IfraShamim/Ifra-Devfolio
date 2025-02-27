@@ -62,7 +62,7 @@ const Projects = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -85,18 +85,18 @@ const Projects = () => {
   };
 
   return (
-    <div className="p-10 overflow-hidden" id="projects">
-      <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
+    <div className="my-[2.5rem] px-6 md:px-40 overflow-hidden" id="projects">
+      <h2 className="text-3xl font-bold text-center mb-6 text-[#c18572]">Projects</h2>
 
       {/* Filter Buttons */}
-      <div className="flex justify-center gap-4 mb-6">
+      <div className="flex justify-center gap-8 mb-6">
         {["All", "JavaScript", "React JS"].map((category) => (
           <button
             key={category}
             className={`px-2 py-1 rounded transition ${
               selectedCategory === category
-                ? "bg-black text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                ? "bg-[#c18572] text-white"
+                : "bg-[#cdad9e] text-white hover:bg-[#c18572]"
             }`}
             onClick={() => handleFilter(category)}
           >
@@ -110,15 +110,15 @@ const Projects = () => {
         {filteredProjects.length > 0 ? (
           filteredProjects.map(({ id, title, image, technologies, demoLink }) => (
             <div key={id}>
-              <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+              <div className="bg-white mr-2 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
                 <img src={image} alt={title} className="w-full h-48 object-cover" />
                 <div className="p-4 text-center">
-                  <h3 className="text-xl font-semibold mb-2">{title}</h3>
-                  <div className="flex flex-wrap justify-center gap-2">
+                  <h3 className="text-[#c18572] text-xl font-semibold mb-2">{title}</h3>
+                  <div className="flex flex-wrap justify-center gap-4">
                     {technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-blue-100 text-black text-xs px-3 py-1 rounded-full"
+                        className="bg-[#cdad9e] text-white text-xs px-3 py-1 rounded-full"
                       >
                         {tech}
                       </span>
@@ -128,7 +128,7 @@ const Projects = () => {
                     href={demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block mt-4 shadow py-2 px-4 rounded-full bg-black text-white transition hover:bg-gray-800"
+                    className="block mt-4 shadow py-2 px-4 rounded-full bg-[#c18572] text-white transition hover:bg-gray-800"
                   >
                     View Project
                   </a>
@@ -137,7 +137,7 @@ const Projects = () => {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-500">No projects found.</p>
+          <p className="text-center text-[#c18572]">No projects found.</p>
         )}
       </Slider>
 

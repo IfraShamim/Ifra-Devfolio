@@ -6,18 +6,18 @@ import { SiTypescript,SiRedux } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 const Skills = () => {
   return (
-    <div id='skills' className="text-center p-6">
-      <h1 className="text-3xl font-bold mb-6">Skills</h1>
+    <div id='skills' className="text-center my-[2.5rem] px-6 md:px-24">
+      <h1 className="text-3xl font-bold mb-6 text-[#c18572]">Skills</h1>
         <div className='flex flex-wrap justify-center gap-2 md:gap-6'>
-        <SkillsBtn value="HTML5" icon={<FaHtml5 />} />
-        <SkillsBtn value="Css3" icon={<FaCss3 />} />
-        <SkillsBtn value="Javascript + ES6" icon={<IoLogoJavascript />} />
-        <SkillsBtn value="Bootstrap5" icon={<FaBootstrap />} />
-        <SkillsBtn value="Typescript" icon={<SiTypescript />} />
-        <SkillsBtn value="Firebase" icon={<IoLogoFirebase  />} />
-        <SkillsBtn value="Tailwind Css" icon={<RiTailwindCssFill />} />
-        <SkillsBtn value="React Js" icon={<FaReact />} />
-        <SkillsBtn value="Redux" icon={<SiRedux />} />
+        <SkillsBtn value="HTML5" icon={<FaHtml5 className='text-[#FF5733] text-[2rem]' />} />
+        <SkillsBtn value="Css3" icon={<FaCss3 className='text-blue-700 text-[2rem]'/>} />
+        <SkillsBtn value="Javascript + ES6" icon={<IoLogoJavascript className='text-yellow-500 text-[2rem]'/>} />
+        <SkillsBtn value="Bootstrap5" icon={<FaBootstrap className='text-purple-700 text-[2rem]'/>} />
+        <SkillsBtn value="Typescript" icon={<SiTypescript className='text-blue-950 text-[2rem]'/>} />
+        <SkillsBtn value="Firebase" icon={<IoLogoFirebase  className='text-yellow-400 text-[2rem]'/>} />
+        <SkillsBtn value="Tailwind Css" icon={<RiTailwindCssFill className='text-blue-900 text-[2rem]'/>} />
+        <SkillsBtn value="React Js" icon={<FaReact className='text-blue-800 text-[2rem]'/>} />
+        <SkillsBtn value="Redux" icon={<SiRedux className='text-red-700 text-[2rem]'/>} />
         </div>
     </div>
   );

@@ -17,18 +17,18 @@ const Navbar = () => {
   return (
     <div className="fixed bg-white w-full z-50 flex justify-between items-center px-[1.5rem] md:px-[10rem] py-2 shadow-md">
       {/* Logo */}
-      <div className="text-[2rem] font-bold">&lt;Ifra/&gt;</div>
+      <div className="text-[2rem] text-[#c18572] tracking-wide font-bold">&lt; Ifra /&gt;</div>
 
       {/* Mobile Menu Icons */}
       <div className="lg:hidden z-50">
         {toggle ? (
           <IoMdClose
-            className="font-bold text-[2.6rem] cursor-pointer"
+            className="font-bold text-[#c18572] text-[2.6rem] cursor-pointer"
             onClick={() => setToggle(false)}
           />
         ) : (
           <HiOutlineBars3BottomRight
-            className="font-bold text-[2.6rem] cursor-pointer"
+            className="font-bold text-[#c18572] text-[2.6rem] cursor-pointer"
             onClick={() => setToggle(true)}
           />
         )}
@@ -37,7 +37,7 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-10">
         {lists.map((li, index) => (
-          <li className="cursor-pointer transition" key={index}>
+          <li className="cursor-pointer transition text-[#cdad9e] hover:text-[#c18572] tracking-wide font-semibold" key={index}>
             <a href={`#${li.path}`}>{li.value}</a>
           </li>
         ))}
@@ -50,7 +50,7 @@ const Navbar = () => {
         }`}
       >
         {lists.map((li, index) => (
-          <li className="cursor-pointer text-xl hover:text-blue-600 transition" key={index}>
+          <li className="cursor-pointer tracking-wide hover:text-[#c18572] font-semibold transition" key={index}>
             <a href={`#${li.path}`} onClick={() => setToggle(false)}>
               {li.value}
             </a>
