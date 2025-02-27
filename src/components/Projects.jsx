@@ -93,7 +93,7 @@ const Projects = () => {
         {["All", "JavaScript", "React JS"].map((category) => (
           <button
             key={category}
-            className={`px-4 py-2 rounded transition ${
+            className={`px-2 py-1 rounded transition ${
               selectedCategory === category
                 ? "bg-black text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -109,7 +109,7 @@ const Projects = () => {
       <Slider {...settings} className="custom-slider">
         {filteredProjects.length > 0 ? (
           filteredProjects.map(({ id, title, image, technologies, demoLink }) => (
-            <div key={id} className="p-4">
+            <div key={id}>
               <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
                 <img src={image} alt={title} className="w-full h-48 object-cover" />
                 <div className="p-4 text-center">

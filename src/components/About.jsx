@@ -26,11 +26,11 @@ const About = () => {
       <div className="flex justify-center mt-4">
         <Btn1 value="Contact Me" />
       </div>
-      <div className="px-6 py-10">
+      <div className="py-10">
       <h1 className="text-3xl font-bold text-center mb-8">My Journey</h1>
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-2">
         {/* Education Section */}
-        <div className="p-6 rounded-lg shadow-md">
+        <div className="w-[100%] p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">Education</h2>
           <ul className="space-y-4">
             <li>

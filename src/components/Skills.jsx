@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <div id='skills' className="text-center p-6">
       <h1 className="text-3xl font-bold mb-6">Skills</h1>
-        <div className='flex flex-wrap justify-center gap-6'>
+        <div className='flex flex-wrap justify-center gap-2 md:gap-6'>
         <SkillsBtn value="HTML5" icon={<FaHtml5 />} />
         <SkillsBtn value="Css3" icon={<FaCss3 />} />
         <SkillsBtn value="Javascript + ES6" icon={<IoLogoJavascript />} />

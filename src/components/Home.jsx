@@ -9,7 +9,7 @@ const Home = () => {
     <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left max-w-screen-lg mx-auto px-6 md:px-8 py-10">
       {/* Left Section - Text Content */}
       <div className="md:w-1/2">
-        <p className="mt-8 font-bold text-[2.5rem] mb-2">
+        <p className="mt-[3.5rem] font-bold text-[2.5rem] mb-2">
           Hello! I am <span className="text-gray-500">Ifra Shamim</span>
         </p>
 

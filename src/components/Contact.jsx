@@ -35,9 +35,9 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='text-center p-[3rem]'>
+    <div id='contact' className='text-center'>
       <div className="flex justify-center items-center px-4">
-      <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-lg">
+      <div className="bg-white p-2 shadow-lg rounded-lg w-full max-w-lg">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">Contact Us</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Name Field */}
@@ -93,7 +93,7 @@ const Contact = () => {
       </div>
     </div>
       <h1 className='text-[2rem] font-bold my-[2rem]'>Connect With Me</h1>
-      <div className='flex flex-wrap justify-center gap-10'>
+      <div className='mb-[2rem] px-[1rem] flex flex-wrap justify-center gap-2 md:gap-10'>
         <a href="https://www.linkedin.com/in/IfraShamim/"><SkillsBtn icon={<FaLinkedin />} value='LinkedIn' /></a>
         <a href=""><SkillsBtn icon={<FaInstagramSquare />} value='Instagram' /></a>
         <a href="https://www.facebook.com/ifra.shamim.54/"><SkillsBtn icon={<FaFacebook />} value='Facebook' /></a>
