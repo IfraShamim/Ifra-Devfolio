@@ -16,7 +16,7 @@ const About = () => {
           <div className='text-[#c18572] flex gap-4 mb-2'><BtnAbout icon={<FaBookJournalWhills  className='text-[#008000] text-[1.5rem]'/>} value='Reciting Quran' /><BtnAbout icon={<FaCode className='text-[1.5rem] text-[#569cd6]' />} value='Coding' /></div>
           <div className='flex gap-4'><BtnAbout icon={<FaCar className='text-[1.5rem] text-red-600'/>} value='Travelling' /><BtnAbout icon={<FaChalkboardTeacher className='text-[1.5rem] text-purple-700'/>} value='Teaching' /></div>
         </div>
-        <div className='flex gap-4 md:gap-10'>
+        <div className='flex gap-4 my-4 md:my-0 md:gap-10'>
           <BtnAbout1 value='1+' text1='Years' text2='Experience' />
           <BtnAbout1 value='20+' text1='Project' text2='Completed' />
         </div>
