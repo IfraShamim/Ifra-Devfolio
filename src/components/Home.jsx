@@ -6,7 +6,8 @@ import Btn2 from "./Btn2";
 import "animate.css";
 const Home = () => {
   return (
-    <div className="dark:bg-gray-800  tracking-wide flex flex-col md:flex-row items-center justify-between text-center md:text-left max-w-screen-lg mx-auto px-6 md:px-8 py-10">
+
+    <div className="dark:bg-gray-800  tracking-wide flex flex-col md:flex-row items-center justify-between text-center md:text-left mx-auto px-6 md:px-[10rem] py-10">
       {/* Left Section - Text Content */}
       <div className="animate__animated animate__backInDown  md:w-1/2">
         <p className="mt-[3.5rem] font-bold text-[2.5rem] text-[#cdad9e] mb-2">

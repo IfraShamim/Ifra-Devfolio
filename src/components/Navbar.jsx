@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed w-full z-50 flex justify-between items-center px-6 md:px-20 py-3 shadow-md bg-white dark:bg-gray-900 transition-all">
+    <div className="fixed w-full z-50 flex justify-between items-center px-6 md:px-[10rem] py-3 shadow-md bg-white dark:bg-gray-900 transition-all">
       {/* Logo */}
       <div className="flex items-center">
       <div className="text-2xl text-[#c18572] tracking-wide font-bold">
