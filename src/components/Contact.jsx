@@ -35,7 +35,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='text-center my-[2.5rem]'>
+    <div id='contact' className='dark:bg-gray-800  text-center py-[2.5rem]'>
       <h2 className="text-2xl font-bold text-center mb-6 text-[#c18572] mt-[2rem]">Contact Us</h2>
       <div className="flex justify-center items-center px-4">
       <div className="bg-white p-4 shadow-lg rounded-lg w-full max-w-lg">

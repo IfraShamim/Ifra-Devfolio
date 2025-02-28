@@ -8,8 +8,8 @@ import "animate.css";
 
 const About = () => {
   return (
-    <div className='px-6 md:px-[10rem]' id='about'>
-      <h1 className='text-center text-[2rem] font-bold mt-[1rem] mb-[1.5rem] text-[#c18572]'>About Me</h1>
+    <div className='dark:bg-gray-800  px-6 md:px-[10rem]' id='about'>
+      <h1 className='text-center text-[2rem] font-bold pt-[1rem] mb-[1.5rem] text-[#c18572]'>About Me</h1>
       <div className='text-[#c18572] block md:flex justify-between'>
         <div>
           <p className='font-semibold text-[1.5rem] mb-[0.5rem] text-[#cdad9e]'>I Love</p>

@@ -85,7 +85,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="my-[2.5rem] px-6 md:px-40 overflow-hidden" id="projects">
+    <div className="dark:bg-gray-800  py-[2.5rem] px-6 md:px-40 overflow-hidden" id="projects">
       <h2 className="text-3xl font-bold text-center mb-6 text-[#c18572]">Projects</h2>
 
       {/* Filter Buttons */}

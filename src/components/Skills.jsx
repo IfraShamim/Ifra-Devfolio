@@ -6,7 +6,7 @@ import { SiTypescript,SiRedux } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 const Skills = () => {
   return (
-    <div id='skills' className="text-center my-[2.5rem] px-6 md:px-24">
+    <div id='skills' className="dark:bg-gray-800  text-center py-[2.5rem] px-6 md:px-24">
       <h1 className="text-3xl font-bold mb-6 text-[#c18572]">Skills</h1>
         <div className='flex flex-wrap justify-center gap-2 md:gap-6'>
         <SkillsBtn value="HTML5" icon={<FaHtml5 className='text-[#FF5733] text-[2rem]' />} />
