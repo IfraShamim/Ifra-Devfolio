@@ -78,15 +78,15 @@ const Projects = () => {
       },
     ],
     appendDots: (dots) => (
-      <div className="custom-dots">
+      <div className="w-[1rem] h-[4rem]">
         <ul> {dots} </ul>
       </div>
     ),
   };
 
   return (
-    <div className="dark:bg-gray-800  py-[2.5rem] px-6 md:px-40 overflow-hidden" id="projects">
-      <h2 className="text-3xl font-bold text-center mb-6 text-[#c18572]">Projects</h2>
+    <div className="font-montserrat py-[2.5rem] px-6 md:px-40 overflow-hidden" id="projects">
+      <h2 className="text-3xl font-bold text-center mb-6 text-textColor dark:text-white">Projects</h2>
 
       {/* Filter Buttons */}
       <div className="flex justify-center gap-8 mb-6">
@@ -95,8 +95,8 @@ const Projects = () => {
             key={category}
             className={`px-2 py-1 rounded transition ${
               selectedCategory === category
-                ? "bg-[#c18572] text-white"
-                : "bg-[#cdad9e] text-white hover:bg-[#c18572]"
+                ? "bg-textColor dark:bg-gray-300 text-white dark:text-textColor"
+                : "bg-lightTextColor dark:bg-gray-100 text-white dark:text-textColor hover:bg-textColor"
             }`}
             onClick={() => handleFilter(category)}
           >
@@ -110,15 +110,15 @@ const Projects = () => {
         {filteredProjects.length > 0 ? (
           filteredProjects.map(({ id, title, image, technologies, demoLink }) => (
             <div key={id}>
-              <div className="bg-white mr-2 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+              <div className="bg-white dark:bg-gray-300 mr-2 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
                 <img src={image} alt={title} className="w-full h-48 object-cover" />
                 <div className="p-4 text-center">
-                  <h3 className="text-[#c18572] text-xl font-semibold mb-2">{title}</h3>
+                  <h3 className="text-textColor text-xl font-semibold mb-2">{title}</h3>
                   <div className="flex flex-wrap justify-center gap-4">
                     {technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-[#cdad9e] text-white text-xs px-3 py-1 rounded-full"
+                        className="bg-lightTextColor text-white text-xs px-3 py-1 rounded-full"
                       >
                         {tech}
                       </span>
@@ -128,7 +128,7 @@ const Projects = () => {
                     href={demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block mt-4 shadow py-2 px-4 rounded-full bg-[#c18572] text-white transition hover:bg-gray-800"
+                    className="block mt-4 shadow py-2 px-4 rounded-full bg-textColor text-white transition hover:bg-lightTextColor"
                   >
                     View Project
                   </a>
@@ -137,7 +137,7 @@ const Projects = () => {
             </div>
           ))
         ) : (
-          <p className="text-center text-[#c18572]">No projects found.</p>
+          <p className="text-center text-textColor">No projects found.</p>
         )}
       </Slider>
 
@@ -151,9 +151,9 @@ const Projects = () => {
             padding-top: 16px;
           }
           .custom-dots li {
-            width: 12px;
-            height: 12px;
-            background-color: gray;
+            width: 1.5rem;
+            height: 4.5rem;
+            background-color: #2c4174;
             border-radius: 50%;
             transition: background 0.3s ease;
           }

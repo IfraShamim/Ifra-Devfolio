@@ -12,6 +12,11 @@ export default {
         poppins: ["Poppins",'sans-serif'],
         cursvie: ['Cedarville Cursive','sans-serif']
       },
+      colors: {
+        primaryColor: "var(--primary-color)",
+        textColor: "var(--text-color)",
+        lightTextColor: "var(--light-text-color)", 
+      },
     },
   },
   plugins: [],
